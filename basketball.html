@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Page</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body style="background-color: lightblue;">
+    <header>
+        <h1>Welcome to the Basketball Page</h1>
+    </header>
+    <nav>
+        <ul>
+          \<nav>
+            <ul>
+                <li><a href="#rules">Rules</a></li>
+                <li><a href="#players">Players</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="resume.html">Resume</a></li> <!-- Corrected path to the resume page -->        
+        </ul>
+    </nav>
+    <main>
+        <section id="rules">
+            <h2>Rules of Basketball</h2>
+            <ol>
+                <li>
+                    <h3>Traveling</h3>
+                    <p> -Traveling occurs when a player holding the ball moves one or both of their feet illegally. This usually involves taking too many steps without dribbling the ball.</p>
+                </li>
+                <li>
+                    <h3>Double Dribble</h3>
+                    <p> -Double dribble is when a player dribbles the ball, stops, and then begins to dribble again without passing or shooting the ball. It is considered a violation.</p>
+                </li>
+                <li>
+                    <h3>Three-Second Violation</h3>
+                    <p> -The three-second violation is when an offensive player remains in the key or paint area (the area under the basket) for more than three seconds at a time without actively moving away.</p>
+                </li>
+            </ol>
+        </section>
+        <section id="players">
+            <h2>Top Basketball Players</h2>
+            <img src="https://tse2.mm.bing.net/th?id=OIP.GFflpaLn1aIudl15xHLScAAAAA&pid=Api&P=0&h=220" alt="Description of the image">
+            <p>Here is an image of the best basketball players ever.</p>
+        </section>
+        <section id="videos">
+            <h2>Basketball Videos</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XbtmGKif7Ck" frameborder="0" allowfullscreen></iframe>
+            <p>Check out this cool basketball video!</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Basketball Page</p>
+    </footer>
+
+    <!-- Anchor to navigate back to the top of the page -->
+    <a href="#top" class="back-to-top">Back to Top</a>
+
+    <!-- Embedded Tableau graph -->
+    <div id="tableauViz"></div>
+
+    <!-- Three styled divs -->
+    <div class="styled-div">Styled Div 1</div>
+    <div class="styled-div">Styled Div 2</div>
+    <div class="styled-div">Styled Div 3</div>
+
+    <!-- Custom CSS styles -->
+    <style>
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: none;
+        }
+        .styled-div {
+            background-color: lightgreen;
+            color: darkgreen;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+
+    <!-- JavaScript to embed Tableau graph -->
+    <script type="text/javascript">
+        var placeholderDiv = document.getElementById("tableauViz");
+        var url = "https://public.tableau.com/views/YourTableauVisualization";
+        var options = {
+            hideTabs: true,
+            onFirstInteractive: function() {
+                console.log("Tableau viz is interactive");
+            }
+        };
+        var viz = new tableau.Viz(placeholderDiv, url, options);
+    </script>
+</body>
+</html>
